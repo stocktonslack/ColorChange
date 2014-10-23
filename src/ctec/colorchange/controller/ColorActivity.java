@@ -37,7 +37,7 @@ public class ColorActivity extends Activity
 		colorList.add(R.color.lightblue);
 		colorList.add(R.color.red);
 		colorList.add(R.color.white);
-		colorList.add(R.color.black);
+		//colorList.add(R.color.black);
 	}
 	
 	private void setupListeners()
