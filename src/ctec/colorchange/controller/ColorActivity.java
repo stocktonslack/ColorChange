@@ -2,11 +2,14 @@ package ctec.colorchange.controller;
 
 
 import android.widget.*;
+
 import java.util.ArrayList;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ColorActivity extends Activity
 {
@@ -30,11 +33,11 @@ public class ColorActivity extends Activity
 	
 	private void fillTheColorList()
 	{
-		colorlist.add(R.color.mintgreen);
-		colorlist.add(R.color.lightblue);
-		colorlist.add(R.color.red);
-		colorlist.add(R.color.white);
-		colorlist.add(R.color.black);
+		colorList.add(R.color.mintgreen);
+		colorList.add(R.color.lightblue);
+		colorList.add(R.color.red);
+		colorList.add(R.color.white);
+		colorList.add(R.color.black);
 	}
 	
 	private void setupListeners()
@@ -46,11 +49,7 @@ public class ColorActivity extends Activity
 			public void onClick(View currentview)
 			{//Button click stuff will go here
 				int randomIndex = (int) (Math.random()* colorList.size());
-				colorButton.setBackgroundResource(R.color.mintgreen);
-				colorButton.setBackgroundResource(R.color.lightblue);
-				colorButton.setBackgroundResource(R.color.red);
-				colorButton.setBackgroundResource(R.color.white);
-				colorButton.setBackgroundResource(R.color.black);
+				
 				
 				colorButton.setBackgroundResource(colorList.get(randomIndex));
 				
